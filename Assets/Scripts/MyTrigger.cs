@@ -17,8 +17,10 @@ public class MyTrigger : MonoBehaviour
         //disableObject(c.gameObject);
         //c.gameObject.SetActive(false);
         //Debug.Log("Triggar entered yay!");
+
+        //uses RemoveTarget from myInstantiator to remove the target that has fallen into the triggar box 
         scriptlink.RemoveTarget(c.transform);
-        missed++;
+        missed++; //adds 1 to missed count
     }
 
     private void OnCollisionEnter(Collision c)
